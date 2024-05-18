@@ -241,7 +241,7 @@ footer p {
 }
 
 .product-card .product-imagecm {
-    width: 120px; /* Mengatur lebar gambar menjadi 100% dari parentnya */
+    width: 115px; /* Mengatur lebar gambar menjadi 100% dari parentnya */
     object-fit: cover; /* Memastikan gambar mempertahankan aspek rasio */
 }
 
