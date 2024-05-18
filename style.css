@@ -226,17 +226,17 @@ footer p {
 }
 
 .product-card .product-imagehp {
-    width: 255px; /* Mengatur lebar gambar menjadi 100% dari parentnya */
+    width: 170px; /* Mengatur lebar gambar menjadi 100% dari parentnya */
     object-fit: cover; /* Memastikan gambar mempertahankan aspek rasio */
 }
 
 .product-card .product-imagelp {
-    width: 200px; /* Mengatur lebar gambar menjadi 100% dari parentnya */
+    width: 170px; /* Mengatur lebar gambar menjadi 100% dari parentnya */
     object-fit: cover; /* Memastikan gambar mempertahankan aspek rasio */
 }
 
 .product-card .product-imagetv {
-    width: 230px; /* Mengatur lebar gambar menjadi 100% dari parentnya */
+    width: 170px; /* Mengatur lebar gambar menjadi 100% dari parentnya */
     object-fit: cover; /* Memastikan gambar mempertahankan aspek rasio */
 }
 
