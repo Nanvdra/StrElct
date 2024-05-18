@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.hamburger {
+    visibility: hidden; /* Menggunakan visibility: hidden; untuk menyembunyikan */
+    cursor: pointer;
+    position: absolute;
+    top: 20px; /* Sesuaikan dengan preferensi Anda */
+    left: 305px; /* Sesuaikan dengan preferensi Anda */
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.nav-menu {
+    display: block;
+    float: right;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-menu ul li:first-child {
+    margin-left: 0;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.nav-menu ul li a:hover {
+    color: #cccccc;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        float: right;
+        margin-right: 20px;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #343a40;
+        text-align: center;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-menu.active ul {
+        display: block;
+    }
+
+    .nav-menu ul {
+        padding: 20px 0;
+    }
+
+    .nav-menu ul li {
+        display: block;
+        margin: 20px 0; /* Tambahkan lebih banyak margin untuk jarak yang lebih besar */
+        padding: 10px 0; /* Menambahkan padding untuk memberikan jarak tambahan */
+    }
+}
+
+.search-container {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#searchResults {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#searchResults li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#searchResults li img {
+    width: 50px; /* Lebar gambar */
+    height: 50px; /* Tinggi gambar */
+    margin-right: 20px;
+}
+
+#searchResults li:hover {
+    background-color: #f0f0f0;
+}
+
+.detail-container {
+    margin: 20px 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#detailTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#detailImage {
+    max-width: 100%;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,190 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+.header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+
+}
+
+.hamburger {
+    visibility: hidden;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Menggeser hamburger ke kanan */
+}
+
+.bar {
+    width: 23px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.nav-menu {
+    display: block;
+    float: right;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-menu ul li:first-child {
+    margin-left: 0;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.nav-menu ul li a:hover {
+    color: #cccccc;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        visibility: visible;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #343a40;
+        text-align: center;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-menu ul {
+        padding: 20px 0;
+    }
+
+    .nav-menu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftcolumn, .rightcolumn {
+    flex: 100%;
+    padding: 0 10px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 800px) {
+    .leftcolumn {
+        flex: 70%;
+    }
+    .rightcolumn {
+        flex: 30%;
+    }
+    .menu-icon {
+        display: none;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        width: auto;
+        border: none;
+    }
+    .nav-menu a {
+        color: black;
+        border: none;
+        font-size: 16px; /* Font size for larger screens */
+    }
+}
+
+.img-1 {
+    width: 122%;
+    height: 200px;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+.img-2 {
+    width: 122%;
+    height: 200px;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+.img-3 {
+    height: 100px;
+    width: 122%;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.img-4, .img-5, .img-6 {
+    height: 200px;
+    width: 122%;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.fa-brands {
+    color: black;
+    font-size: 15px;
+}
