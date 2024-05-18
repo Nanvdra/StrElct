@@ -236,7 +236,7 @@ footer p {
 }
 
 .product-card .product-imagetv {
-    width: 170px; /* Mengatur lebar gambar menjadi 100% dari parentnya */
+    width: 138px; /* Mengatur lebar gambar menjadi 100% dari parentnya */
     object-fit: cover; /* Memastikan gambar mempertahankan aspek rasio */
 }
 
